@@ -1,0 +1,16 @@
+
+
+
+<h1>
+    Barcha kitoblar ro'yxati
+</h1>
+
+{% for book in object_list %}
+    <ul>
+        <li>Kitob nomi : {{ book.nomi }}</li>
+        <li>Kitob haqida : {{ book.kitob_haqida }}</li>
+        <li>Kitob muallifi : {{ book.muallif }}</li>
+        <li>Kitob id raqami : {{ book.isbn }}</li>
+        <li>Kitob narxi : {{ book.narx }}</li>
+    </ul>
+{% endfor %}
